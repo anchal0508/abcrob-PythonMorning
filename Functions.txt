@@ -1,0 +1,84 @@
+'''
+def naturalNum():
+    for i in range(1,10):
+        print(i,end=" ")
+
+def oddNumbers(sta,ending):
+    for i in range(sta,ending):
+        if i%2!=0:
+            print(i,end=" ")
+
+user = int(input("Enter Starting From: "))
+user1 = int(input("Enter Ending Num: "))
+oddNumbers(user,user1)
+
+'''
+
+
+# ------------------------------------------------------------
+'''
+
+def naturalNum():
+    for i in range(1,10):
+        print(i,end=" ")
+
+def oddNumbers(sta=4,ending=50):
+    for i in range(sta,ending):
+        if i%2!=0:
+            print(i,end=" ")
+
+
+
+oddNumbers(5)
+print()
+oddNumbers(6,99)
+print()
+oddNumbers(sta=77)
+print()
+oddNumbers(ending=10)
+print()
+oddNumbers(ending=10)
+print()
+# ----------  Task ----------------------
+try:
+    a = testPrime(34)
+    print(a)
+except:
+    print("Iska function banana hai \nPlease compleate your Function")
+
+'''
+
+
+
+'''
+rev = 0
+a = 1234
+
+while a>0:
+    r = a%10
+    a = a//10
+    rev = (rev*10)+r
+print(rev)
+'''
+
+'''
+import math
+print(math.factorial(5))
+
+'''
+'''
+f = 1
+for i in  range(1,6):
+    #print(i,end=" ")
+    f = f*i
+print(f)
+'''
+         
+# ---------------------------------------------------------------------
+
+for i in range(2,11):
+    for j in range(1,i):
+        print('*',end=" ")
+    for j in range(9,i-2,-1):
+        print('#',end=" ")
+    print()
