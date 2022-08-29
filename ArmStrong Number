@@ -1,0 +1,15 @@
+a = input("Number: ")
+power = len(a)
+a= int(a)
+p=1
+Sum = 0
+safe= a
+while a>0:
+    r= a%10
+    a =  a//10
+    p = r**power
+    print("-- ",p)
+    Sum = Sum+p
+    p = 1
+print(Sum)
+
