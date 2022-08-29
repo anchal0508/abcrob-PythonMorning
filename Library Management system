@@ -1,0 +1,55 @@
+Student = {'Math':[],'Hindi':[],'Physics':[],'English':[]}
+Books = {'Math':2,'Hindi':5,'Physics':5,'English':5}
+
+Heading = 'Libreary management system'
+print(Heading.center(40,'-'))
+Options = "1. Issue a Book \t2. Submit  \n : "
+print()
+con = True
+while True:
+    try:
+        user = int(input(Options.center(40, )))
+        con = True
+        if user == 1:
+            while con:
+                
+                bookName = input("Name of the Book: ")
+                if bookName not in Books:
+                    print("Please Enter Valid Name ")
+                    con = True
+                    
+                elif Books[bookName]>0:
+                    Books[bookName] = Books[bookName] -1
+                    print(Books)
+                    con = False
+               
+                else:
+                    print("Book is not available")
+                    con = True
+                
+        elif user == 2:
+            while con:
+                
+                bookName = input("Name of the Book: ")
+                if bookName not in Books:
+                    print("Please Enter Valid Name ")
+                    con = True
+                    
+                elif Books[bookName]<5:
+                    Books[bookName] = Books[bookName] +1
+                    print(Books)
+                    con = False
+               
+                else:
+                    print("Extra book Submition")
+                    con = True
+        
+        else:
+            print("Please enter a valid Input")
+            
+    except:
+        print("Please Enter a Decimal Number")
+
+
+
+#print('Maasdas' not in Books)
